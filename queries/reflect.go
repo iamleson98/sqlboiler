@@ -14,7 +14,7 @@ import (
 	"unicode"
 
 	"github.com/friendsofgo/errors"
-	"github.com/volatiletech/sqlboiler/v4/boil"
+	"github.com/iamleson98/sqlboiler/v4/boil"
 	"github.com/volatiletech/strmangle"
 )
 
@@ -129,6 +129,16 @@ func (q *Query) Bind(ctx context.Context, exec boil.Executor, obj interface{}) e
 	structType, sliceType, bkind, err := bindChecks(obj)
 	if err != nil {
 		return err
+	}
+
+	timeout := boil.GetTimeout()
+	if timeout > 0 {
+		if ctx == nil {
+			ctx = context.Background()
+		}
+		var cancelFunc context.CancelFunc
+		ctx, cancelFunc = context.WithTimeout(ctx, timeout)
+		defer cancelFunc()
 	}
 
 	var rows *sql.Rows

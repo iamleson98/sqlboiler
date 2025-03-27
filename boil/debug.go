@@ -4,6 +4,7 @@ import (
 	"context"
 	"io"
 	"os"
+	"time"
 )
 
 // DebugMode is a flag controlling whether generated sql statements and
@@ -14,6 +15,16 @@ var DebugMode = false
 
 // DebugWriter is where the debug output will be sent if DebugMode is true
 var DebugWriter io.Writer = os.Stdout
+
+var timeout time.Duration
+
+func SetTimeout(to time.Duration) {
+	timeout = to
+}
+
+func GetTimeout() time.Duration {
+	return timeout
+}
 
 // WithDebug modifies a context to configure debug writing. If true,
 // all queries made using this context will be outputted to the io.Writer

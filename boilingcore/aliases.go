@@ -5,7 +5,7 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/volatiletech/sqlboiler/v4/drivers"
+	"github.com/iamleson98/sqlboiler/v4/drivers"
 	"github.com/volatiletech/strmangle"
 )
 

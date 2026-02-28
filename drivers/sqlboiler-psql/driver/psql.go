@@ -785,7 +785,7 @@ func (p *PostgresDriver) TranslateColumnType(c drivers.Column) drivers.Column {
 		case "bigint", "bigserial":
 			c.Type = "null.Int64"
 		case "integer", "serial":
-			c.Type = "null.Int"
+			c.Type = "null.Int32"
 		case "oid":
 			c.Type = "null.Uint32"
 		case "smallint", "smallserial":
@@ -850,7 +850,7 @@ func (p *PostgresDriver) TranslateColumnType(c drivers.Column) drivers.Column {
 		case "bigint", "bigserial":
 			c.Type = "int64"
 		case "integer", "serial":
-			c.Type = "int"
+			c.Type = "int32"
 		case "oid":
 			c.Type = "uint32"
 		case "smallint", "smallserial":

@@ -7,7 +7,7 @@
 			"columns": [
 				{
 					"name": "id",
-					"type": "int",
+					"type": "int32",
 					"db_type": "integer",
 					"default": "",
 					"comment": "",
@@ -22,7 +22,7 @@
 				},
 				{
 					"name": "parent_id",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "NULL",
 					"comment": "",
@@ -37,7 +37,7 @@
 				},
 				{
 					"name": "root_id",
-					"type": "int",
+					"type": "int32",
 					"db_type": "integer",
 					"default": "",
 					"comment": "",
@@ -139,7 +139,7 @@
 			"columns": [
 				{
 					"name": "id",
-					"type": "int",
+					"type": "int32",
 					"db_type": "integer",
 					"default": "nextval('sponsors_id_seq'::regclass)",
 					"comment": "",
@@ -187,7 +187,7 @@
 			"columns": [
 				{
 					"name": "id",
-					"type": "int",
+					"type": "int32",
 					"db_type": "integer",
 					"default": "nextval('tags_id_seq'::regclass)",
 					"comment": "",
@@ -245,7 +245,7 @@
 			"columns": [
 				{
 					"name": "id",
-					"type": "int",
+					"type": "int32",
 					"db_type": "integer",
 					"default": "nextval('type_monsters_id_seq'::regclass)",
 					"comment": "",
@@ -905,7 +905,7 @@
 				},
 				{
 					"name": "int_zero",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "NULL",
 					"comment": "",
@@ -920,7 +920,7 @@
 				},
 				{
 					"name": "int_one",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "NULL",
 					"comment": "",
@@ -935,7 +935,7 @@
 				},
 				{
 					"name": "int_two",
-					"type": "int",
+					"type": "int32",
 					"db_type": "integer",
 					"default": "",
 					"comment": "",
@@ -950,7 +950,7 @@
 				},
 				{
 					"name": "int_three",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "333333",
 					"comment": "",
@@ -965,7 +965,7 @@
 				},
 				{
 					"name": "int_four",
-					"type": "int",
+					"type": "int32",
 					"db_type": "integer",
 					"default": "444444",
 					"comment": "",
@@ -980,7 +980,7 @@
 				},
 				{
 					"name": "int_five",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "0",
 					"comment": "",
@@ -995,7 +995,7 @@
 				},
 				{
 					"name": "int_six",
-					"type": "int",
+					"type": "int32",
 					"db_type": "integer",
 					"default": "0",
 					"comment": "",
@@ -1670,7 +1670,7 @@
 				},
 				{
 					"name": "integer_default",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "5",
 					"comment": "",
@@ -2651,7 +2651,7 @@
 			"columns": [
 				{
 					"name": "id",
-					"type": "int",
+					"type": "int32",
 					"db_type": "integer",
 					"default": "nextval('users_id_seq'::regclass)",
 					"comment": "",
@@ -2739,7 +2739,7 @@
 			"columns": [
 				{
 					"name": "video_id",
-					"type": "int",
+					"type": "int32",
 					"db_type": "integer",
 					"default": "",
 					"comment": "",
@@ -2754,7 +2754,7 @@
 				},
 				{
 					"name": "tag_id",
-					"type": "int",
+					"type": "int32",
 					"db_type": "integer",
 					"default": "",
 					"comment": "",
@@ -2814,7 +2814,7 @@
 			"columns": [
 				{
 					"name": "id",
-					"type": "int",
+					"type": "int32",
 					"db_type": "integer",
 					"default": "nextval('videos_id_seq'::regclass)",
 					"comment": "",
@@ -2829,7 +2829,7 @@
 				},
 				{
 					"name": "user_id",
-					"type": "int",
+					"type": "int32",
 					"db_type": "integer",
 					"default": "",
 					"comment": "",
@@ -2844,7 +2844,7 @@
 				},
 				{
 					"name": "sponsor_id",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "NULL",
 					"comment": "",
@@ -2925,7 +2925,7 @@
 			"columns": [
 				{
 					"name": "id",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "NULL",
 					"comment": "",
@@ -3585,7 +3585,7 @@
 				},
 				{
 					"name": "int_zero",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "NULL",
 					"comment": "",
@@ -3600,7 +3600,7 @@
 				},
 				{
 					"name": "int_one",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "NULL",
 					"comment": "",
@@ -3615,7 +3615,7 @@
 				},
 				{
 					"name": "int_two",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "NULL",
 					"comment": "",
@@ -3630,7 +3630,7 @@
 				},
 				{
 					"name": "int_three",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "NULL",
 					"comment": "",
@@ -3645,7 +3645,7 @@
 				},
 				{
 					"name": "int_four",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "NULL",
 					"comment": "",
@@ -3660,7 +3660,7 @@
 				},
 				{
 					"name": "int_five",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "NULL",
 					"comment": "",
@@ -3675,7 +3675,7 @@
 				},
 				{
 					"name": "int_six",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "NULL",
 					"comment": "",
@@ -4350,7 +4350,7 @@
 				},
 				{
 					"name": "integer_default",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "NULL",
 					"comment": "",
@@ -5326,7 +5326,7 @@
 			"columns": [
 				{
 					"name": "id",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "NULL",
 					"comment": "",
@@ -5986,7 +5986,7 @@
 				},
 				{
 					"name": "int_zero",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "NULL",
 					"comment": "",
@@ -6001,7 +6001,7 @@
 				},
 				{
 					"name": "int_one",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "NULL",
 					"comment": "",
@@ -6016,7 +6016,7 @@
 				},
 				{
 					"name": "int_two",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "NULL",
 					"comment": "",
@@ -6031,7 +6031,7 @@
 				},
 				{
 					"name": "int_three",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "NULL",
 					"comment": "",
@@ -6046,7 +6046,7 @@
 				},
 				{
 					"name": "int_four",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "NULL",
 					"comment": "",
@@ -6061,7 +6061,7 @@
 				},
 				{
 					"name": "int_five",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "NULL",
 					"comment": "",
@@ -6076,7 +6076,7 @@
 				},
 				{
 					"name": "int_six",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "NULL",
 					"comment": "",
@@ -6751,7 +6751,7 @@
 				},
 				{
 					"name": "integer_default",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "NULL",
 					"comment": "",
@@ -7727,7 +7727,7 @@
 			"columns": [
 				{
 					"name": "user_id",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "NULL",
 					"comment": "",
@@ -7742,7 +7742,7 @@
 				},
 				{
 					"name": "video_id",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "NULL",
 					"comment": "",
@@ -7757,7 +7757,7 @@
 				},
 				{
 					"name": "sponsor_id",
-					"type": "null.Int",
+					"type": "null.Int32",
 					"db_type": "integer",
 					"default": "NULL",
 					"comment": "",
